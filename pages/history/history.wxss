@@ -1,0 +1,12 @@
+.clearHistory{
+  color: #ddd;
+}
+.item{
+  padding: 10rpx;
+  margin-bottom: 10rpx;
+  background-color: #fff;
+  /* border-bottom: 1rpx solid rgb(114, 114, 114); */
+}
+.item .query{
+  color: rgb(148, 148, 148);
+}

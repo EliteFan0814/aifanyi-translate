@@ -1,0 +1,27 @@
+<view class='container'>
+
+
+  <view class='show-area'>
+    <!-- 输入文本框 -->
+    <view class='input-wrap'>
+      <text class='iconfont icon-close' hidden='{{hideClearIcon}}' bindtap='onTapClose'></text>
+      <textarea placeholder='请输入要翻译的文本' placeholder-style='color:#8995a1' bindtap='onTap' bindinput='onInput' bindconfirm='onConfirm' value='{{query}}'></textarea>
+    </view>
+
+    <!-- 翻译切换 -->
+    <view class='changeLang'>
+      <navigator url='/pages/change/change' hover-class='navigator-hover'>
+        <text>翻译为：{{tarLang}} </text>
+        <text class='iconfont icon-down'></text>
+      </navigator>
+    </view>
+
+    <view class='output-wrap'>
+      <view class='output-wrap-inner'>
+        <view class='text-wrap' wx:for='{{result}}' wx:key='index'>
+          <text selectable="true">{{item.dst}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

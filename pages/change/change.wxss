@@ -1,0 +1,30 @@
+.lang-list{
+  display: flex;
+  flex-direction: column;
+  
+}
+.title {
+  background: #fff;
+  border-bottom: 1px solid #ececec;
+  padding: 15rpx 40rpx;
+  color: #aaa;
+  font-size: 30rpx;
+  text-align: center;
+}
+.lang-item{
+  padding: 20rpx 30rpx;
+  background-color: #fff;
+  border-bottom: 1px solid #ececec;
+}
+.item-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.languageChs{
+  font-size: 37rpx;
+}
+.icon-Selected{
+  color: #1296db;
+  font-size:38rpx;
+}

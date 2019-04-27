@@ -1,0 +1,9 @@
+<view class='container langList'>
+  <view class='title'>请选择要翻译的语言</view>
+  <view class='lang-item' wx:for='{{langList}}' wx:for-item='language' wx:key='index' data-chs='{{language.chs}}' data-lang='{{language.lang}}' bindtap='onTapItem' hover-class='view-hover'>
+    <view class='item-wrapper'>
+      <text class='languageChs'>{{language.chs}}</text>
+      <text class='iconfont icon-Selected' wx:if='{{language.lang===curLang.lang}}'></text>
+    </view>
+  </view>
+</view>

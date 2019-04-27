@@ -1,0 +1,40 @@
+.changeLang {
+  color: #8995a1;
+  font-size: 30rpx;
+  padding: 10rpx;
+  display: flex;
+  align-items: center;
+}
+
+.changeLang .icon-down {
+  color: #8995a1;
+  font-size: 30rpx;
+}
+
+.show-area {
+  position: relative;
+}
+.input-wrap,
+.output-wrap {
+  background: #fff;
+  border-bottom: 1rpx solid #c7cee0;
+}
+.show-area textarea,
+.output-wrap .output-wrap-inner{
+  background-color: #fff;
+  padding: 20rpx 0 20rpx 10rpx;
+  width: calc(100% - 48rpx);
+  margin: 0;
+  box-sizing: border-box;
+}
+.show-area .icon-close {
+  position: absolute;
+  right: 10rpx;
+  top: 20rpx;
+  z-index: 100;
+  font-size: 40rpx;
+  color: #666;
+}
+.output-wrap .output-wrap-inner{
+  height: 310rpx;
+}
