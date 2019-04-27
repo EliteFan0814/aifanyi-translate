@@ -24,13 +24,17 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    // this.setData({history:wx.getStorageSync('history')})
+    this.setData({history:wx.getStorageSync('history')})
   },
   onTapItem: function (e) {
     app.globalData.curLang = { chs: e.currentTarget.dataset.chs, lang: e.currentTarget.dataset.to}
     wx.reLaunch({
       url: `/pages/index/index?query=${e.currentTarget.dataset.query}`
     })
+  },
+  clearHistory:function(e){
+    this.setData({ history: []})
+    wx.setStorageSync('history', history)
   },
   /**
    * 生命周期函数--监听页面隐藏

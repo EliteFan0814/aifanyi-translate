@@ -1,5 +1,5 @@
 <scroll-view scroll-y class='container'>
-<button class='clearHistory'>清空历史</button>
+<button class='clearHistory' bindtap='clearHistory'>清空历史</button>
   <view class='history-list'>
     <view class='item' wx:for='{{history}}' wx:key='index' bindtap='onTapItem' data-query='{{item.query}}' data-chs='{{item.chs}}' data-to='{{item.to}}'>
       <view class='query'>{{item.query}}</view>
