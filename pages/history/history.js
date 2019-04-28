@@ -1,4 +1,3 @@
-// pages/history/history.js
 const app = getApp()
 Page({
   data: {

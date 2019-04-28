@@ -18,7 +18,6 @@ function baiduTranslate(q, { from = 'auto', to = 'auto' } = { from: 'auto', to: 
         sign
       },
       success(res) {
-        console.log(res)
         if (res.data && res.data.trans_result) {
           resolve(res.data)
         } else {

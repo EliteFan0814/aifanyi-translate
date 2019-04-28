@@ -11,6 +11,7 @@ Page({
     result: []
   },
   onLoad: function (options) {
+    console.log(options)
     if (options.query) {
       this.setData({ query: options.query })
     }

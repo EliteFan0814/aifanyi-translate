@@ -1,6 +1,4 @@
 <view class='container'>
-
-
   <view class='show-area'>
     <!-- 输入文本框 -->
     <view class='input-wrap'>
